@@ -2,7 +2,7 @@
 // TODO: look for all instances of [] and replace all instances of 
 //       the 'variables' with actual values 
 // variables:
-//      https://github.com/Tilakj/events-app-api-server.git
+//      https://github.com/Tilakj/events-app-web-server.git
 //      main
 //      dtcaugust2021-223
 //      web-server-image
@@ -19,7 +19,7 @@ pipeline {
             steps {
                 echo 'Retrieving source from github' 
                 git branch: 'main',
-                    url: 'https://github.com/Tilakj/events-app-api-server.git'
+                    url: 'https://github.com/Tilakj/events-app-web-server.git'
                 echo 'Did we get the source?' 
                 sh 'ls -a'
             }
